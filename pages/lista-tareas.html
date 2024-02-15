@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FavIcon -->
-    <link rel="shortcut icon" href="./assets/icons8-argentina-32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/icons8-argentina-32.png" type="image/x-icon">
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Clase Final</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Lista de Tareas</title>
 </head>
+
 <body>
     <header>
-        <h1>JavaScript</h1>
+        <h1>Lista de Tareas</h1>
     </header>
     <main>
-        <a href="./pages/lista-tareas.html">Lista de Tareas</a>
-        <section class="card-template">
 
-        </section>
+        <form action="#" class="form">
+            <input type="text" class="input">
+        </form>
+
+        <ul class="ul">
+            <!-- Acá aparecerán las tareas -->
+        </ul>
+
+        <button class="delete-all-btn">Borrar Tareas</button>
     </main>
-        <footer>
+    <footer>
         <div class="footer-links">
             <a href="#">
                 <i class="fa-brands fa-instagram"></i>
@@ -39,7 +47,8 @@
             </a>
         </div>
     </footer>
-    <!-- JS -->
-    <script src="./js/index.js"></script>
+    <!-- Js -->
+    <script src="../js/toDoList.js"></script>
 </body>
+
 </html>
