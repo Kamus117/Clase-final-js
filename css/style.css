@@ -1,0 +1,157 @@
+
+/* Google-Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap');
+
+/* Normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    /* Colores */
+    --col-A:#ECF4D6;
+    --col-B:#9AD0C2;
+    --col-C:#2D9596;
+    --col-D:#265073;
+
+    --font-colA: white;
+    --font-colB: black;
+
+    /* Gradientes */
+    --grad-A: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% ) fixed no-repeat center;
+    --grad-B: linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% ) fixed no-repeat center;
+
+    /* Fuentes */
+    --text:"Montserrat", sans-serif;
+    --title: "Protest Revolution", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Body */
+
+body{
+    color: var(--font-colA);
+    background: var(--grad-A);
+    font-family: var(--text);
+}
+
+h1{
+    font-family: var(--title);
+}
+
+/* Header */
+
+header{
+    background: var(--col-A);
+    padding: 10px 0;
+    border-radius: 0 0 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.251) 0px 8px 10px;
+}
+
+header h1{
+    text-align: center;
+    color: var(--font-colB);
+}
+
+/* Main */
+
+
+.card-template{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    row-gap: 30px;
+    padding: 50px 0;
+}
+
+.card{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    row-gap: 20px;
+    
+    border: 1px solid;
+    border-radius: 10px;
+    
+    width: 300px;
+    height: 450px;
+    padding: 20px 0;
+    
+    background: var(--grad-B);
+    color: white;
+    
+    box-shadow: rgba(0, 0, 0, 0.639) 0 0 10px;
+    border: none;
+}
+
+.card-title{
+    font-size: xx-large;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.card div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.card img{
+    border-radius: 10px;
+    height: 80%;
+    width: 80%;
+}
+
+.card div b{
+    font-size: x-large;
+    text-shadow: rgba(0, 0, 0, 0.793) 0 0 10px;
+}
+
+.buy-btn{
+    border: none;
+    background: rgb(50, 50, 50);
+    border-radius: 10px;
+    color: var(--font-colA);
+    padding: 10px 20px;
+    font-weight: bolder;
+}
+
+
+/* Footer */
+footer{
+    width: 100%;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+
+    background: var(--col-A);
+    border-radius: 30px 30px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.251) 0px -8px 10px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    font-size: x-large;
+}
+
+.footer-links a{
+    color: var(--font-colB);
+}
+
+.footer-links a:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+    text-shadow: 0 0 25px #09529c;
+}
